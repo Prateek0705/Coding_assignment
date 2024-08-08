@@ -1,5 +1,6 @@
 Question 1:
-Time Complexity: The time complexity of the _topological_sort method is O(V + E), where V is the number of tasks and E is the number of dependencies. This is because the method performs a topological sort of the tasks using a queue, and in the worst case scenario, each task and dependency is visited once.
+Time Complexity: The time complexity of the _topological_sort method is O(V + E), where V is the number of tasks and E is the number of dependencies. 
+This is because the method performs a topological sort of the tasks using a queue, and in the worst case scenario, each task and dependency is visited once.
 
 Space Complexity: The space complexity of the TaskScheduler class is O(V + E), where V is the number of tasks and E is the number of dependencies. This is because the class stores the tasks, dependencies, durations, graph, in_degree, est, eft, lst, and lft dictionaries, all of which have a space complexity of O(V + E) due to the number of tasks and dependencies. Additionally, the class uses a deque for the queue in the _topological_sort method, which also contributes to the space complexity.
 
