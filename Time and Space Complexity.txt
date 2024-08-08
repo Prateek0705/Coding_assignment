@@ -1,0 +1,10 @@
+Question 1:
+Time Complexity: The time complexity of the _topological_sort method is O(V + E), where V is the number of tasks and E is the number of dependencies. This is because the method performs a topological sort of the tasks using a queue, and in the worst case scenario, each task and dependency is visited once.
+
+Space Complexity: The space complexity of the TaskScheduler class is O(V + E), where V is the number of tasks and E is the number of dependencies. This is because the class stores the tasks, dependencies, durations, graph, in_degree, est, eft, lst, and lft dictionaries, all of which have a space complexity of O(V + E) due to the number of tasks and dependencies. Additionally, the class uses a deque for the queue in the _topological_sort method, which also contributes to the space complexity.
+
+Question 2:
+Time Complexity: The time complexity of adding a friendship, getting friends, and finding common friends is O(1) because it involves simple dictionary lookups and set operations, which are constant time operations.
+The time complexity of finding the nth connection between two people is O(V + E), where V is the number of vertices (people) and E is the number of edges (friendships) in the social network. This is because we are performing a breadth-first search starting from one person and exploring their friends until we find the target person. In the worst case, we may have to visit all vertices and edges in the network.
+
+Space Complexity: The space complexity of the social network data structure is O(V + E), where V is the number of vertices (people) and E is the number of edges (friendships) in the network. This is because we are storing the friendships in a dictionary where each person is a key and their friends are stored in a set. Additionally, in the nth_connection method, we are using a queue and a set to keep track of visited people, which also contributes to the space complexity.
